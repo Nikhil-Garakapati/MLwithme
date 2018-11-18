@@ -69,8 +69,9 @@ Now, we have the derivate the SSE-loss function.
 This loss function is applied to every layer and when it comes to code it looks like 
 ```python
 def backpropagation(self):
-    d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) *                         sigmoid_derivative(self.output)))
-    d_weights1 = np.dot(self.input.T,  (np.dot(2*(self.y - self.output) *                  sigmoid_derivative(self.output), self.weights2.T) *                        sigmoid_derivative(self.layer1)))
+    d_weights2 = np.dot(self.layer1.T, (2*(self.y - self.output) * sigmoid_derivative(self.output)))
+    d_weights1 = np.dot(self.input.T,  (np.dot(2*(self.y - self.output) * sigmoid_derivative(self.output), self.weights2.T) * sigmoid_derivative(self.layer1)))
+    
 #Update the weights
 self.weights1 = d_weights1 + 1
 self.weights2 = d_weights2 + 1
