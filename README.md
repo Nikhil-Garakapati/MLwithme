@@ -9,7 +9,7 @@ Let's build a 2 layered neural network( Exclude the input layer when you're cout
 A simple 2 layered neural network looks like this
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/Nikhil-Garakapati/MLwithme/blob/master/NeuralNets/Images/Neuralnet.png">
 </p>
 
 Creating a neural network
@@ -35,7 +35,11 @@ of the hidden layer and output layer.
 There are many activation functions that can be used in neural nets. Let's get started with **Sigmoid(σ)** activation function. This neural network gives the prediction either **1 or 0**. The sigmoid function typically looks like
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/Nikhil-Garakapati/MLwithme/blob/master/NeuralNets/Images/sigmoid_graph.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Nikhil-Garakapati/MLwithme/blob/master/NeuralNets/Images/sigmoid_act.png">
 </p>
 
 This sigmoid function is an logisitic funtion that's applied in hidden layers and in output layers. The reason we use activation functions is to apply non-linear activity to the model. The model gets complexed. And the most important thing we need to remember is **Activation function should be differentiable**. 
@@ -57,13 +61,13 @@ Let the expected output be **1** and denoted by **ȳ** and obtained output be **
 In order to backpropagate, we have the derivate the loss function with respect to weights and bias. There are many loss functions out there that can be used. We use **SSE-Loss function (Sum of squared errors)**. 
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/Nikhil-Garakapati/MLwithme/blob/master/NeuralNets/Images/SSE.png">
 </p>
 
 Now, we have the derivate the SSE-loss function.
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/Nikhil-Garakapati/MLwithme/blob/master/NeuralNets/Images/derivateofSSE.png">
 </p>
 
 This loss function is applied to every layer and when it comes to code it looks like 
